@@ -2,12 +2,14 @@
   "name": "ultraviolet-server",
   "version": "1.0.0",
   "description": "My custom unblocked proxy server for school",
+  "type": "module",
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
     "build": "node build.js"
   },
   "dependencies": {
-    "express": "^4.19.2"
+    "express": "^4.19.2",
+    "rimraf": "^6.0.1"
   }
 }
