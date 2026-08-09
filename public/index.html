@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Stealth Game Site</title>
+    <style>
+        body { background-color: #111; color: white; font-family: sans-serif; text-align: center; padding-top: 100px; }
+        input { padding: 15px; width: 50%; border-radius: 5px; border: none; font-size: 16px; }
+        button { padding: 15px 25px; border-radius: 5px; border: none; background: #ec008c; color: white; font-size: 16px; cursor: pointer; }
+    </style>
+</head>
+<body>
+    <h1>Unblocked Web Vault</h1>
+    <form id="proxy-form">
+        <!-- Users will type the now.gg link here -->
+        <input type="text" id="url-input" placeholder="Type now.gg/apps/roblox-corporation/5349/roblox.html here..." required>
+        <button type="submit">Launch</button>
+    </form>
+
+    <script>
+        document.getElementById('proxy-form').addEventListener('submit', (e) => {
+            e.preventDefault();
+            const input = document.getElementById('url-input').value;
+            // This encodes the URL so school filters can't read it
+            window.location.href = "/uv/service/" + btoa(input);
+        });
+    </script>
+</body>
+</html>
