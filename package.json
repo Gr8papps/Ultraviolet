@@ -15,7 +15,8 @@
 		"client.d.ts"
 	],
 	"type": "module",
-	"scripts": {
+		"scripts": {
+		"start": "node lib/index.cjs",
 		"build": "node build.js",
 		"dev": "node build.js --dev",
 		"prepack": "npm run build",
